@@ -1,7 +1,6 @@
 import { Box, HStack, Flex, Link, Image, ButtonGroup, useBreakpointValue, IconButton, useDisclosure } from "@chakra-ui/react";
 import NextLink from 'next/link'
 import { FiMenu } from "react-icons/fi"
-import ScrollLink from "./ScrollLink";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -47,11 +46,10 @@ export default function Navbar() {
   const isDesktop = useBreakpointValue({ base: false, lg: true })
 
   const [toggle, setToggle] = useState(false)
-
-  const handleClick = () => {
+  const handleMobileClick = () => {
     setToggle(!toggle)
   }
- 
+  
   return (
     <Box 
       position="fixed"
@@ -94,9 +92,9 @@ export default function Navbar() {
                   <HStack spacing="3">
                     <ButtonGroup variant="link" spacing="8">
                       {componentData[".links"].map((item, i) => (
-                        <ScrollLink key={i} href={item.a.href}>
+                        <Link key={i} href={item.a.href}>
                           {item.a.textContent}
-                        </ScrollLink>
+                        </Link>
                       ))}
                     </ButtonGroup>
                   </HStack>
@@ -106,7 +104,7 @@ export default function Navbar() {
                   variant="ghost"
                   icon={<FiMenu fontSize="1.25rem" />}
                   aria-label="Open Menu"
-                  onClick={handleClick}
+                  onClick={handleMobileClick}
                 />
               )
             }
@@ -134,7 +132,7 @@ export default function Navbar() {
               _last={{
                 border: 0
               }}
-              onClick={handleClick}
+              onClick={handleMobileClick}
             >
               {item.a.textContent}
             </Link>

@@ -74,7 +74,7 @@ export default function FAQs() {
       >
         <Accordion>
           {componentData[".faq"].map((item, i) => (
-            <AccordionItem >
+            <AccordionItem key={i}>
               <AccordionButton py="16px">
                 <Box as="span" flex='1' textAlign='left' 
                   dangerouslySetInnerHTML={{__html: item.h1}}

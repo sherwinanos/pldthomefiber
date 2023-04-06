@@ -1,7 +1,6 @@
-import { Box, Button, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Stack, Text, Image, Link } from "@chakra-ui/react";
 import { IoCall } from 'react-icons/io5'
 import { useRouter } from 'next/router'
-import ScrollLink from "./ScrollLink";
 
 export default function Hero() {
   const componentData = {
@@ -47,12 +46,12 @@ export default function Hero() {
           </Text>
           
           <Stack direction="row" spacing={4}>
-            <ScrollLink
+            <Link
               className="btn btn-primary"
               href="#plans"
             >
               See all plans
-            </ScrollLink>
+            </Link>
             <Button 
               leftIcon={<IoCall />} 
               colorScheme="red" 

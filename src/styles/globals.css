@@ -2,7 +2,7 @@
   background-color: #E53E3E;
   border-radius: 6px;
   border: 1px solid #E53E3E;
-  color: #FFF;
+  color: #FFF !important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -10,12 +10,14 @@
   font-weight: 600;
   height: 40px;
   min-width: 2.5rem;
-  transition: 0.2s
+  transition: 0.2s;
+  text-decoration: none;
 }
 
 .btn-primary:hover {
   background-color: #C53030;
   border-color: #C53030;
+  text-decoration: none !important;
 }
 
 .slick-prev, .slick-next {

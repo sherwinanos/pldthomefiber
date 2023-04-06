@@ -1,10 +1,9 @@
-import { Box, Heading, Text, Flex, Image, Button } from "@chakra-ui/react"
+import { Box, Heading, Text, Flex, Image, Link } from "@chakra-ui/react"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 import { useRouter } from 'next/router'
-import ScrollLink from "./ScrollLink";
 
 
 export default function Testimonials() {
@@ -178,12 +177,12 @@ export default function Testimonials() {
         mt="80px"
         textAlign="center"
       >
-        <ScrollLink
+        <Link
           className="btn btn-primary"
           href="#faqs"
         >
           Learn more
-        </ScrollLink>
+        </Link>
       </Box>
 
     </Box>

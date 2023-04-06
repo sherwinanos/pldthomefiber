@@ -1,6 +1,5 @@
-import { Box, SimpleGrid, Image, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, SimpleGrid, Image, Heading, Text, Link } from "@chakra-ui/react";
 import { useRouter } from 'next/router'
-import ScrollLink from "./ScrollLink";
 
 export default function Plans() {
   const componentData = {
@@ -100,12 +99,12 @@ export default function Plans() {
         mt="40px"
         textAlign="center"
       >
-        <ScrollLink
+        <Link
           className="btn btn-primary"
           href="#contact"
         >
           Apply Now
-        </ScrollLink>
+        </Link>
       </Box>
     </Box>
   )
