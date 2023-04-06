@@ -1,0 +1,52 @@
+.btn-primary {
+  background-color: #E53E3E;
+  border-radius: 6px;
+  border: 1px solid #E53E3E;
+  color: #FFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  font-weight: 600;
+  height: 40px;
+  min-width: 2.5rem;
+  transition: 0.2s
+}
+
+.btn-primary:hover {
+  background-color: #C53030;
+  border-color: #C53030;
+}
+
+.slick-prev, .slick-next {
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.slick-prev { left: -40px !important; }
+
+.slick-arrow:before {
+  color: red !important;
+  font-size: 32px !important;
+}
+
+.slick-dots { bottom: -40px !important; }
+
+.slick-dots li button:before {
+  color: transparent;
+  font-size: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #E53E3E !important;
+}
+
+#chakra-modal-nav-modal {
+  background: #C53030;
+}
+
+#chakra-modal-nav-modal .chakra-modal__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
