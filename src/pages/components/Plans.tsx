@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 export default function Plans() {
   const componentData = {
     headline: "Check our Fiber Unlimited Plans",
-    subheadline: "We've got you covered with the reliable internet that's right for your home",
+    subheadline: "We've got you covered with the reliable internet that's right for your home.",
     '.plans': [
       {
         title: "Plan 1299",
@@ -76,6 +76,8 @@ export default function Plans() {
           <Box
             key={i}
             textAlign="center"
+            borderBottom={{ base: "1px solid #dedede", lg: "0" }}
+            pb={{ base: "24px", lg: "0"}}
           >
             <Image 
               src={plan.img.src}

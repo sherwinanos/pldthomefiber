@@ -20,6 +20,14 @@
   text-decoration: none !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .btn-primary {
+    display: flex !important;
+    max-width: inherit !important;
+    width: 100% !important;
+  }
+}
+
 .slick-prev, .slick-next {
   height: 32px !important;
   width: 32px !important;

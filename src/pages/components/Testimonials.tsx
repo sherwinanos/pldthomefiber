@@ -9,7 +9,7 @@ import { useRouter } from 'next/router'
 export default function Testimonials() {
   const componentData = {
     headline: "Testimonials",
-    subheadline: "Check my clients feedback about my service",
+    subheadline: "Here are my clients feedback on my service.",
     ".testimonials": [
       {
         quote: "Our review is 5 star po para kay sir Ronaldo very accommodating po sya, lahat ng itatanong po namin ay nasasagot nya at hindi ka po maiintimidate na magtanong sa kanya. And legit po talaga si sir, dahil rin po sa kanya ay mabilis kaming nakabitan ng wifi. Lastly, very thankful rin po kami sa kanya.",
@@ -113,7 +113,7 @@ export default function Testimonials() {
                 bgColor="white" 
                 p="24px 24px 80px 24px"
                 w={{ base: "100%", lg: "96%" }}
-                h={{ base: "400px", lg: "360px" }}
+                h={{ base: "500px", lg: "360px" }}
                 borderRadius="24px"
               >
                 <Heading 
