@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 export default function Hero() {
   const componentData = {
-    h1: "Experience fiber-fast speeds in Cavite with all-new PLDT Home Fiber Plans!",
+    h1: "Experience fiber-fast speeds in Cavite with all-new PLDT Home Fiber Plans",
     p: "Hi, I'm Ronnie, a legit sales agent of HF3B Enterprises Inc., which offers unlimited PLDT Home Fiber plans. For interested applicants in Dasmarinas, Tagaytay, Mendez, Silang, Carmona, GMA, Gen. Trias, Imus and Bacoor, please contact me.",
     img: {
       src: "/agent-rhonie.png",
